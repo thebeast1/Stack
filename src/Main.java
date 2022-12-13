@@ -16,7 +16,6 @@ public class Main {
         stack.pop();
         stack.pop();
 
-        stack.getTop();
 
         System.out.println(stack.isEmpty());
     }
