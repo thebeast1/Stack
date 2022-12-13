@@ -1,22 +1,10 @@
-import StackImplementation.StackImp;
-import StackImplementation.StackNunLimitedSizeImp;
+import BalancedParentheses.BalancedParentheses;
+
 
 public class Main {
-
     public static void main(String[] args) {
-
-        StackImp<Double> stack = new StackNunLimitedSizeImp<>();
-
-        stack.push(1.0);
-        stack.push(12.0);
-        stack.push(58.0);
-        stack.push(2.0);
-        stack.print();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-
-
-        System.out.println(stack.isEmpty());
+        BalancedParentheses balancedParentheses = new BalancedParentheses();
+       boolean isBalance = balancedParentheses.isBalancedParentheses("5+(x*5)}");
+        System.out.println("is balanced: "+isBalance);
     }
 }

@@ -32,12 +32,14 @@ public class StackLimitedSizeImp<T> implements StackImp<T> {
     }
 
     @Override
-    public void pop() {
+    public T pop() {
         if (top >= 0) {
+            T element = stack[top];
             top--;
-            return;
+            return element;
         }
         System.out.println("Stack is already empty.");
+        return null;
     }
 
     @Override

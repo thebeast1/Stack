@@ -28,14 +28,15 @@ public class StackNunLimitedSizeImp<T> implements StackImp<T> {
     }
 
     @Override
-    public void pop() {
+    public T pop() {
         if (isEmpty()) {
             System.out.println("Stack is already empty.");
-            return;
+            return null;
         }
         Node topNode = onTop;
         System.out.println("This value will be deleted: " + topNode.value);
         onTop = topNode.next;
+        return topNode.value;
     }
 
     @Override
