@@ -1,9 +1,9 @@
 # Stack
 this project for Stack implementation and it's applications.
 
-#Implementation
+# Implementation
 - limited stack.
 - nun limited stack.
 
-#Application
+# Application
 - Balanced Parentheses.
